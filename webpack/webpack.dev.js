@@ -15,7 +15,10 @@ module.exports = () =>
       open: true,
       compress: true,
       hot: true,
-      port: 4000,
+      port: 3000,
+      proxy: {
+        '/api': 'http://localhost:4000',
+      },
     },
 
     module: {

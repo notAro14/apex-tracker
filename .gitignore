@@ -3,3 +3,5 @@ dist/
 .eslintcache
 coverage/
 stats.json
+.env
+.DS_Store
