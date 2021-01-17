@@ -17,7 +17,7 @@ module.exports = {
     // html-webpack-plugin throws a warning DEP_WEBPACK_COMPILATION_ASSETS
     // See this issue https://github.com/jantimon/html-webpack-plugin/issues/1523
     new HtmlWebpackPlugin({
-      title: 'Webpack Boilerplate for React',
+      title: 'Apex tracker',
       favicon: path.resolve(__dirname, '../src/images/favicon.png'),
       template: path.resolve(__dirname, '../src/template.html'),
       filename: 'index.html',
