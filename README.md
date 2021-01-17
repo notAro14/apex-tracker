@@ -1,47 +1,25 @@
-# Webpack boilerplate for React
+# Apex tracker
 
-Use Webpack 5 to kick off your React projects
+Get player stats on Apex legends
 
-Pre requisites:
+## Apex legends API
 
-- node
-- yarn
+Get your Api Key [here](https://apex.tracker.gg/site-api)
 
-Install
+Then rename the **.env.example** file to **.env** with your API_KEY filled
 
-```bash
-yarn
+```env
+API_KEY=your-api-key
 ```
 
-Development
+Run development
 
-```bash
+```console
+yarn dev
+```
+
+Run production build
+
+```console
 yarn start
 ```
-
-Build
-
-```bash
-yarn run build
-```
-
-Format with Prettier:
-
-```bash
-yarn run format
-```
-
-Lint with Eslint
-
-```bash
-yarn run lint
-```
-
-Dependencies:
-
-- React 17
-- Webpack 5
-- Loaders : babel-loader, sass-loader (dart-sass), style-loader, css-loader, postcss-loader
-- ESlint: airbnb, react, prettier compatible
-- Router : react-router-dom
-- Pre commit Hook : husky, lint-staged
