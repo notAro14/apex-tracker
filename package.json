@@ -1,10 +1,10 @@
 {
-  "name": "webpack-react-boilerplate",
+  "name": "apex-tracker-v3",
   "version": "1.0.0",
-  "description": "Webpack Boilerplate for React",
+  "description": "Web app for viewing apex legends player stats",
   "private": true,
   "engines": {
-    "node": "15.x"
+    "node": "14.x"
   },
   "scripts": {
     "analyze": "webpack-bundle-analyzer stats.json dist",
@@ -18,9 +18,10 @@
     "test": "jest --coverage --passWithNoTests"
   },
   "keywords": [
-    "webpack",
+    "node",
+    "material-ui",
     "react",
-    "boilerplate"
+    "apex-legends"
   ],
   "author": "Aro Andriamaro",
   "license": "MIT",
