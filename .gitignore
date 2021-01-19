@@ -5,3 +5,5 @@ coverage/
 stats.json
 .env
 .DS_Store
+.cache
+.parcel-cache
