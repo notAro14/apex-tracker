@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, lazy } from 'react';
 
-import Loading from '../Loading/Loading';
-import Idle from '../Idle/Idle';
-import Player from '../Player/Player';
 import getPlayerStats from '../../api';
+import Loading from '../Loading/Loading';
+
+const Idle = lazy(() => import('../Idle/Idle'));
+const Player = lazy(() => import('../Player/Player'));
 
 function SearchResults({ playerInfo }) {
   const PENDING = 'PENDING';

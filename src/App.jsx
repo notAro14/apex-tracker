@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, Suspense } from 'react';
 
 import { ErrorBoundary } from 'react-error-boundary';
 
-import ErrorFallback from './components/ErrorFallback/ErrorFallback';
 import SearchResults from './components/SearchResults/SearchResults';
+import ErrorFallback from './components/ErrorFallback/ErrorFallback';
 import SearchForm from './components/SearchForm/SearchForm';
 import Layout from './components/Layout/Layout';
 import MainTitle from './components/MainTitle/MainTitle';
+import Loading from './components/Loading/Loading';
 
 function App() {
   const [playerInfo, setPlayerInfo] = useState(null);
@@ -25,7 +26,9 @@ function App() {
         FallbackComponent={ErrorFallback}
         onReset={() => setPlayerInfo(null)}
       >
-        <SearchResults playerInfo={playerInfo} />
+        <Suspense fallback={<Loading />}>
+          <SearchResults playerInfo={playerInfo} />
+        </Suspense>
       </ErrorBoundary>
     </Layout>
   );
