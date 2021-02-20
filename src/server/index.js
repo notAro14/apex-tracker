@@ -4,7 +4,7 @@ const express = require('express');
 const cors = require('cors');
 const fetch = require('node-fetch');
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4001;
 const { API_KEY } = process.env;
 const API_BASE_URL = 'https://public-api.tracker.gg/v2/apex/standard/profile';
 
